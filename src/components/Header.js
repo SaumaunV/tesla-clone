@@ -25,10 +25,12 @@ function Header() {
               {car}
             </a>
           ))}
+          <a href="#">Solar Roof</a>
+          <a href="#">Solar Panels</a>
       </Menu>
       <RightMenu>
         <a href="#">Shop</a>
-        <a href="#">Tesla Account</a>
+        <a href="#">Account</a>
         <CustomMenu onClick={handleMenuState} />
       </RightMenu>
       <BurgerNav show={burgerStatus}>
@@ -84,22 +86,21 @@ const Menu = styled.div`
 
   a {
     font-weight: 600;
-    text-transform: uppercase;
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     display: none;
   }
-`
+`;
 
 const RightMenu = styled.div`
   display: flex;
   align-items: center;
   a {
     font-weight: 600;
-    text-transform: uppercase;
     margin-right: 10px;
+    padding: 0 10px;
   }
 `;
 

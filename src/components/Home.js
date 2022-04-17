@@ -6,11 +6,12 @@ function Home() {
   return (
     <Container>
       <Section
-        title="Model S"
+        title="Model 3"
         description="Order Online for Touchless Delivery"
-        backgroundImage="model-s.jpg"
+        backgroundImage="model-3.jpg"
         leftButtonText="Custom Order"
         rightButtonText="Existing Inventory"
+        first
       />
       <Section
         title="Model Y"
@@ -20,9 +21,9 @@ function Home() {
         rightButtonText="Existing Inventory"
       />
       <Section
-        title="Model 3"
+        title="Model S"
         description="Order Online for Touchless Delivery"
-        backgroundImage="model-3.jpg"
+        backgroundImage="model-s.jpg"
         leftButtonText="Custom Order"
         rightButtonText="Existing Inventory"
       />
@@ -34,15 +35,15 @@ function Home() {
         rightButtonText="Existing Inventory"
       />
       <Section
-        title="Lowest Cost Solar Panels in America"
-        description="Money-back guarantee"
+        title="Solar Panels"
+        description="Lowest Cost Solar Panels in America"
         backgroundImage="solar-panel.jpg"
         leftButtonText="Order now"
         rightButtonText="Learn more"
       />
       <Section
-        title="Solar for New Roofs"
-        description="Solar Roof Costs Less Than a New Roof Plus Solar Panels"
+        title="Solar Roof"
+        description="Produce Clean Energy From Your Roof"
         backgroundImage="solar-roof.jpg"
         leftButtonText="Order now"
         rightButtonText="Learn more"
@@ -53,6 +54,7 @@ function Home() {
         backgroundImage="accessories.jpg"
         leftButtonText="Shop now"
         rightButtonText=""
+        last
       />
     </Container>
   );
