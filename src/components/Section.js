@@ -36,13 +36,12 @@ function Section(props) {
 
 export default Section;
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   width: 100vw;
   height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  //background-image: url("/images/model-s.jpg");
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -50,7 +49,7 @@ const Wrapper = styled.div`
   background-image: ${(props) => `url("/images/${props.bgImage}")`};
 `;
 
-const ItemText = styled.div`
+export const ItemText = styled.div`
   padding-top: 15vh;
   text-align: center;
 

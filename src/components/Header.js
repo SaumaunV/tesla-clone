@@ -4,6 +4,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { selectCars } from "../features/car/carSlice";
 import { useSelector } from  "react-redux"
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [burgerStatus, setBurgerStatus] = useState(false);
@@ -15,18 +16,18 @@ function Header() {
 
   return (
     <Container>
-      <a href="">
+      <Link to="/">
         <img src="/images/logo.svg" alt="tesla logo" />
-      </a>
+      </Link>
       <Menu>
         {cars &&
           cars.map((car, index) => (
-            <a key={index} href="#">
+            <Link key={index} to={car.replace(" ", "-")}>
               {car}
-            </a>
+            </Link>
           ))}
-          <a href="#">Solar Roof</a>
-          <a href="#">Solar Panels</a>
+        <Link to="/Solar-Roof">Solar Roof</Link>
+        <Link to="/Solar-Panels">Solar Panels</Link>
       </Menu>
       <RightMenu>
         <a href="#">Shop</a>
@@ -39,25 +40,25 @@ function Header() {
         </CloseWrapper>
         {cars &&
           cars.map((car, index) => (
-            <li>
-              <a key={index} href="#">
+            <li key={index}>
+              <a href="#">
                 {car}
               </a>
             </li>
           ))}
-        <li>
+        <li key="e">
           <a href="#">Existing Inventory</a>
         </li>
-        <li>
+        <li key="u">
           <a href="#">Used Inventory</a>
         </li>
-        <li>
+        <li key="t">
           <a href="#">Trade-in</a>
         </li>
-        <li>
+        <li key="c">
           <a href="#">Cybertruck</a>
         </li>
-        <li>
+        <li key="r">
           <a href="#">Roadster</a>
         </li>
       </BurgerNav>
