@@ -29,6 +29,7 @@ ReactDOM.render(
                   "Peak Power",
                 ]}
                 backgroundImage="model-s.jpg"
+                jumbotron
               />
             }
           ></Route>
@@ -75,8 +76,38 @@ ReactDOM.render(
               />
             }
           ></Route>
-          <Route path="/Solar-Roof" element={<SectionInfo />}></Route>
-          <Route path="/Solar-Panels" element={<SectionInfo />}></Route>
+          <Route
+            path="/Solar-Roof"
+            element={
+              <SectionInfo
+                title="Solar Roof"
+                description="Transform your roof and produce clean energy"
+                info={["-", "25-Year", "24/7"]}
+                infoDescription={[
+                  "Beautiful Solar Without Compromise",
+                  "Tile Warranty",
+                  "Outage Protection",
+                ]}
+                backgroundImage="solar-roof.jpg"
+              />
+            }
+          ></Route>
+          <Route
+            path="/Solar-Panels"
+            element={
+              <SectionInfo
+                title="Solar for Existing Roofs"
+                description="Transform your roof and produce clean energy"
+                info={["-", "$", "24/7"]}
+                infoDescription={[
+                  "Convert Sunlight to Energy",
+                  "Guaranteed Lowest Price for Solar",
+                  "Energy Monitoring",
+                ]}
+                backgroundImage="solar-panel.jpg"
+              />
+            }
+          ></Route>
           <Route path="/" element={<App />} />
         </Routes>
       </Router>
